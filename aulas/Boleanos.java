@@ -2,13 +2,15 @@ package aulas;
 
 public class Boleanos {
     public static void main(String[] args){
-        boolean fimDeSemana = false;
-        boolean fazendoSol = true;
-        boolean vamosApraia = fimDeSemana && fazendoSol;
+        int nota = 50;
 
-        System.out.println(vamosApraia);
+        if (nota >= 70){
+            System.out.println("Aluno aprovado");
+        }else if (nota >= 50 && nota <= 69) {
+            System.out.println("Aluno de recuperação");
+        } else {
+            System.out.println("Aluno reprovado");
+        }
 
-        String mensgaem = fimDeSemana ? "Vamos a praia" : "Não é fim de semana";
-        System.out.println(mensgaem);
     }
 }

@@ -34,6 +34,31 @@ public class Array {
         } else {
             System.out.println("Essa array não contem numeros inteiros");
         }
+
+        // Definindo o maior numero do array
+        System.out.println("Maior e menor");
+        int[] numeros = {1,2,3,4,5,6,7,8,9};
+        int maior = numeros[0];
+        int menor = numeros[0];
+        int media = 0;
+
+        for (int w=0; w < numeros.length; w++){
+                if (numeros[w] > maior){
+                    maior = numeros[w];
+                }
+
+                if (numeros[w] < menor){
+                    menor = numeros[w];
+                }
+                media += numeros[w];
+            }
+
+            System.out.println("Maior: " + maior);
+            System.out.println("Menor: " + menor);
+            System.out.println("Media: " + media/numeros.length);
         }
-    }
+
+
+        }
+
 
