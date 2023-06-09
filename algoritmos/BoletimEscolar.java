@@ -12,7 +12,7 @@ public class BoletimEscolar {
         int senha = scanner.nextInt();
 
         if (nome.equals("Lucas") && senha == 123){
-            System.out.println("Seja b em-vindo(a), " + nome);
+            System.out.println("Seja bem-vindo(a), " + nome);
 
             float[] notas = {9, 10, 10, 7, 9, 8};
             float soma = 0;
