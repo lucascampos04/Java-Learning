@@ -1,4 +1,4 @@
-package MetodoCOnstrutor;
+package MetodoConstrutor;
 
 public class Pessoa {
     private String nome;

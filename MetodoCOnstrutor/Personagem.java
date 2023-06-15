@@ -1,4 +1,4 @@
-package MetodoCOnstrutor;
+package MetodoConstrutor;
 
 import javax.swing.*;
 

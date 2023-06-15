@@ -1,4 +1,4 @@
-package MetodoCOnstrutor;
+package MetodoConstrutor;
 
 public class app {
     public static void main(String[] args){
