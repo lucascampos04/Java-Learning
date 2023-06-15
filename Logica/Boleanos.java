@@ -1,4 +1,4 @@
-package aulas;
+package Logica;
 
 public class Boleanos {
     public static void main(String[] args){

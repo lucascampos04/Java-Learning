@@ -1,4 +1,4 @@
-package aulas;
+package Logica;
 
 import java.awt.*;
 import java.util.ArrayList;
