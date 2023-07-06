@@ -12,6 +12,6 @@ public class main {
         dog.latir();
         System.out.println("O cachorro pegou uma " + dog.pegarBolinha());
 
-        System.out.println(dog.interagir("banho"));
+        System.out.println(dog.interagir("Comida"));
     }
 }

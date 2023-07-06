@@ -17,20 +17,12 @@ public class Cachorro {
     public String estadoDeEspirito;
 
     public String interagir(String acao){
-        if (acao.equals("carinho")){
-            this.estadoDeEspirito = "Feliz";
-            return estadoDeEspirito;
+        switch (acao) {
+            case "carinho" -> this.estadoDeEspirito = "Feliz";
+            case "Tomar Banho" -> this.estadoDeEspirito = "Latir e chorar";
+            case "Comida" -> this.estadoDeEspirito = "Comendo";
+            default -> this.estadoDeEspirito = "Dormindo";
         }
-        else if(acao.equals("Tomar Banho")){
-            this.estadoDeEspirito = "Latir e chorar";
-        }
-        else if(acao.equals("Comida")){
-            this.estadoDeEspirito = "Comer";
-        }
-        else {
-            this.estadoDeEspirito = "Dormindo";
-        }
-
-        return estadoDeEspirito;
+        return this.estadoDeEspirito;
     }
 }
