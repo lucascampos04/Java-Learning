@@ -6,6 +6,7 @@ public class Pessoa {
     private String nome;
     private String sobrenome;
     private Float idade;
+    static int NumeroDePessoas;
 
     // Construtores
 
@@ -13,9 +14,20 @@ public class Pessoa {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.idade = idade;
+
+        NumeroDePessoas ++;
     }
 
-    // MEtodos
+    // Metodos
+
+
+    public static int getNumeroDePessoas() {
+        return NumeroDePessoas;
+    }
+
+    public static void setNumeroDePessoas(int numeroDePessoas) {
+        NumeroDePessoas = numeroDePessoas;
+    }
 
     // O get pega
     public String getNome(){
@@ -53,4 +65,14 @@ public class Pessoa {
     public void setIdade(Float idade) {
         this.idade = idade;
     }
+
+    // ToString
+    //@Override
+    //public String toString() {
+    //    return "Pessoa{" +
+    //            "nome='" + nome + '\'' +
+    //            '}';
+    //}
 }
+
+
