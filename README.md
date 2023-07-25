@@ -1,5 +1,5 @@
-## Java Learning
+## Java Learning 📗
 
-Bem-vindo ao meu repositório de projetos e algoritmos em Java!
+Welcome to my repository of projects and algorithms in Java!
 
-Neste espaço, estarei compartilhando alguns dos meus projetos e algoritmos implementados na linguagem de programação Java. Aqui, você encontrará códigos e soluções para diversos problemas, bem como projetos desenvolvidos com o objetivo de aprender e aprimorar minhas habilidades em Java
+In this space, I will be sharing some of my projects and algorithms implemented in the Java programming language. Here, you will find codes and solutions for various problems, as well as projects developed with the goal of learning and improving my Java skills.
