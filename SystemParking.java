@@ -8,34 +8,39 @@ public class SystemParking {
         Scanner scan = new Scanner(System.in);
 
         while (true){
-            System.out.println("Escolha o andar (1 a 3, ou 0 para sair): ");
-            int andarEscolhido = scan.nextInt();
+            try {
+                System.out.println("Escolha o andar (1 a 3, ou 0 para sair): ");
+                int andarEscolhido = scan.nextInt();
 
-            if (andarEscolhido == 0){
-                System.out.println("Saindo do programa...");
-                break;
-            }
+                if (andarEscolhido == 0){
+                    System.out.println("Saindo do programa...");
+                    break;
+                }
 
-            if (andarEscolhido < 1 || andarEscolhido > totalAndares){
-                System.out.println("Andar inválido. Escolha um andar de 1 a 3.");
-                continue;
-            }
+                if (andarEscolhido < 1 || andarEscolhido > totalAndares){
+                    System.out.println("Andar inválido. Escolha um andar de 1 a 3.");
+                    continue;
+                }
 
-            System.out.println("Escolha uma vaga de 1 a 10");
-            int vagaEscolhida = scan.nextInt();
+                System.out.println("Escolha uma vaga de 1 a 10");
+                int vagaEscolhida = scan.nextInt();
 
-            if (vagaEscolhida < 1 || vagaEscolhida > vagasPorAndar){
-                System.out.println("Vaga invalida. Escolha uma vaga de 1 a 10");
-                continue;
-            }
+                if (vagaEscolhida < 1 || vagaEscolhida > vagasPorAndar){
+                    System.out.println("Vaga invalida. Escolha uma vaga de 1 a 10");
+                    continue;
+                }
 
-            // Verifique se a vaga está ocupada
+                // Verifique se a vaga está ocupada
 
-            if (vagas[andarEscolhido - 1][vagaEscolhida - 1]){
-                System.out.println("A vaga escolhida está ocupada.");
-            } else {
-                vagas[andarEscolhido - 1][vagaEscolhida - 1] = true;
-                System.out.println("Vaga ocupada com sucesso");
+                if (vagas[andarEscolhido - 1][vagaEscolhida - 1]){
+                    System.out.println("A vaga escolhida está ocupada.");
+                } else {
+                    vagas[andarEscolhido - 1][vagaEscolhida - 1] = true;
+                    System.out.println("Vaga ocupada com sucesso");
+                }
+            } catch (java.util.InputMismatchException e){
+                System.out.println("Entrada inválida. Por favor, insira um número inteiro.");
+                scan.nextLine();
             }
         }
 
